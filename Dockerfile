@@ -1,19 +1,10 @@
-FROM golang:1.24-alpine AS builder
+FROM ghcr.io/tgdrive/teldrive:latest
 
-RUN apk add --no-cache git
-
+# কাজের ডিরেক্টরি সেট করা
 WORKDIR /app
 
-COPY . .
+# লোকাল থেকে কনফিগ ফাইলটি কন্টেইনারে কপি করা
+COPY config.toml /app/config.toml
 
-RUN go build -o teldrive .
-
-FROM alpine:latest
-
-WORKDIR /app
-
-COPY --from=builder /app/teldrive /app/teldrive
-
-EXPOSE 8080
-
-CMD ["./teldrive", "server"]
+# সঠিকভাবে সার্ভার রান করার কমান্ড
+CMD ["server", "-c", "/app/config.toml"]
