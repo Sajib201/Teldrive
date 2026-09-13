@@ -23,7 +23,7 @@ max-open-connections = 25
 
 [jwt]
 session-time = '30d'
-secret = 'Scrt_D3'
+secret = 'Chandi45'
 allowed-users = ['sajibarua']
 
 [log]
@@ -38,8 +38,8 @@ read-timeout = '1h'
 write-timeout = '1h'
 
 [tg]
-app-hash = 'AAEmPWwICU0QL59vQgxCAAhtoPshapgwVJs'
-app-id = 8614953707
+app-hash = 'AAG6nXefJUX83vEJgizCOooN38lPRVxHfho'
+app-id = 8568966651
 app-version = '6.1.4 K'
 auto-channel-create = true
 channel-limit = 500000
