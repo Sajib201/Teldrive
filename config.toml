@@ -38,8 +38,8 @@ read-timeout = '1h'
 write-timeout = '1h'
 
 [tg]
-app-hash = 'AAG6nXefJUX83vEJgizCOooN38lPRVxHfho'
-app-id = 8568966651
+app-hash = '6d28b50e70e2a7d318ca37e48db4f1ed'
+app-id = 30042391
 app-version = '6.1.4 K'
 auto-channel-create = true
 channel-limit = 500000
